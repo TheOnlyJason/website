@@ -1,0 +1,66 @@
+.App main {
+  background: linear-gradient(135deg, #273585 0%, #FEB47B 100%);  
+  z-index: -1;
+}
+
+
+/* base record style */
+.record-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 30%;
+  background:
+    radial-gradient(circle at center, #1DB954 0%, #1DB954 15%, transparent 15%),
+    radial-gradient(circle at center, rgba(255,255,255,0.2) 22%, transparent 22%),
+    repeating-radial-gradient(circle at center,
+      rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 1px,
+      transparent 1px, transparent 3px
+    ),
+    #000;
+  background-blend-mode: normal, normal, overlay, normal;
+  z-index: -1;
+}
+
+/* small, fastest */
+.record-bg--small {
+  top: 0%;
+  left: 50%;
+  width: 40vmin;
+  height: 40vmin;
+  max-width: 300px;
+  max-height: 300px;
+  opacity: 0.3;
+  animation: spin 30s linear infinite;
+}
+
+/* medium, moderate */
+.record-bg--medium {
+  top: 50%;
+  left: 00%;
+  width: 60vmin;
+  height: 60vmin;
+  max-width: 500px;
+  max-height: 500px;
+  opacity: 0.3;
+  animation: spin 45s linear infinite reverse;
+}
+
+/* large, slowest */
+.record-bg--large {
+  top: 100%;
+  left: 100%;
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 700px;
+  max-height: 700px;
+  opacity: 0.3;
+  animation: spin 60s linear infinite;
+}
+
+/* spin animation remains the same */
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}

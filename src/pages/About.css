@@ -1,0 +1,168 @@
+/* src/pages/About.css */
+/* Wrapper for the whole page */
+.about-page {
+    
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Welcome title at the top */
+.welcome-title {
+    margin-top: 0 rem !important;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff; /* or whatever contrasts your bg */
+}
+
+/* FLIP CONTAINER: white frame + shadow */
+.flip-container {
+   
+    perspective: 1000px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .flipper {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+    /* fill the framed area */
+    width: 600px;               
+    height: 100%;
+    position: relative;
+  }
+  
+  /* flip state */
+  .flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  /* BOTH FACES: cover the flipper area and hide backface */
+  .front, .back {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  
+    /* round the inner corners to match the frame */
+    border-radius:  2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* FRONT SIDE – About */
+  .front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000000 0%, #2b44d0 100%);
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  /* BACK SIDE – Education */
+  .back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(-135deg, #000000 0%, #2b44d0 100%);
+
+    color: #fff;
+    padding: 3rem 2rem 2rem;
+  }
+  
+  /* Image & Play button */
+  .about__image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+  
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .about__image {
+    width: 100%;
+    height: auto;
+    border-radius:  2rem;
+  }
+  
+  .play-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.1s;
+  }
+  .play-button:hover {
+    transform: scale(1.5);
+  }
+  
+  /* About text */
+  .about__text {
+    max-width: 600px;
+    text-align: center;
+  }
+  .about__text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    
+  }
+
+  .name {
+    margin-top: -15rem !important;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Education list */
+  .education-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: start;
+  }
+  .education-list li {
+    margin-bottom: 1rem;
+  }
+  
+  /* skill list */
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: start;
+  }
+  .skill-list li {
+    margin-bottom: 1rem;
+  }
+  

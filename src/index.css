@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    background: linear-gradient(135deg, #273585 0%, #FEB47B 100%);
+
+    --spotify-black:   #17552d;
+    --spotify-dark:    #181818;
+    --spotify-green:   #000000;
+    --text-light:      rgba(117, 72, 72, 0.9)
+    --text-muted:      rgba(255,255,255,0.6);
+  }
+  /* apply global resets */
+  body {
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-light);
+    font-family: 'SpotifyFont', sans-serif; /* or your preferred font */
+  }
+  a {
+    color: var(--spotify-green);
+    text-decoration: none;
+  }
+  

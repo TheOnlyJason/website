@@ -1,0 +1,50 @@
+.home {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 2rem;
+    position: relative; overflow: hidden;
+  }
+  
+  /* Text */
+  .home h1 { color: #fff; font-size: 3rem; margin-bottom: 1rem; }
+  .home p  { color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 600px; }
+  
+  /* Play button stays static */
+  .home-play-button {
+    position: absolute;
+    top: 65%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem; height: 6rem;
+    background-color: rgba(29,185,84,0.8);
+    border: none; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 2.5rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    cursor: pointer; z-index: 2;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  .home-play-button:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(29,185,84,1);
+  }
+  
+  /* Expanding overlay circle (behind the play icon) */
+  .expand-overlay {
+    position: absolute;
+    top: 65%; left: 50%;
+    width: 6rem; height: 6rem;
+    background-color: #1DB954;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1; /* just below the button */
+    animation: overlayExpand 1s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  @keyframes overlayExpand {
+    to {
+      transform: translate(-50%, -50%) scale(100);
+      border-radius: 0;
+    }
+  }
+  

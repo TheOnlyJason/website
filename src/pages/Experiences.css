@@ -1,0 +1,119 @@
+/* Page wrapper */
+.exp-page {
+    padding: 2rem 0;
+    margin: 0;
+    background: transparent;
+    color: #000;
+  }
+  .exp-page h1 {
+    margin: 0 0 1rem 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .exp-row {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+  
+    /* small fixed left gutter so the first card clears the navbar */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding: 0 1rem;
+    scroll-behavior: smooth;
+  
+    
+  }
+  
+  .exp-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .exp-card {
+    flex: 0 0 auto;
+    width: 300px;
+    background: #fff;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    scroll-snap-align: start;   /* snap to the left edge */
+  }
+  /* Each card snaps to center */
+  .exp-card {
+    flex: 0 0 auto;
+    width: 400px;
+    background: #fff;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    position: relative;
+  }
+  
+  /* Card internals */
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  .exp-header h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .exp-date {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  .exp-role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0 1rem;
+  }
+  .exp-bullets {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+  }
+  .exp-bullets li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Big centered Dashboard title */
+  .dashboard-title {
+    text-align: center;
+    font-size: 5rem !important;
+    font-weight: bold;
+    margin-top: -7rem !important;
+    margin-left: 0 !important;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+/* Semi-transparent green circular play button */
+.play-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(29, 185, 84, 0.6);  /* 60% opacity */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: background-color 0.1s, transform 0.1s;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(29, 185, 84, 0.8);  /* 80% opacity on hover */
+    transform: scale(1.5);
+  }
