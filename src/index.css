@@ -8,7 +8,7 @@
     --spotify-black:   #17552d;
     --spotify-dark:    #181818;
     --spotify-green:   #000000;
-    --text-light:      rgba(117, 72, 72, 0.9)
+    --text-light:      rgba(117, 72, 72, 0.9);
     --text-muted:      rgba(255,255,255,0.6);
   }
   /* apply global resets */
