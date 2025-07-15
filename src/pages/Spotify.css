@@ -1,0 +1,244 @@
+/* src/pages/Spotify.css */
+
+/* Page wrapper */
+.spotify-page {
+  padding: 2rem;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Main heading */
+.spotify-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* The list of experiences */
+.spotify-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Each “row” */
+.spotify-row {
+  display: grid;
+  grid-template-columns: 40px 60px 1fr 120px;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.spotify-row:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* Number on left */
+.spotify-index {
+  color: #E6A57E;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* Artwork placeholder */
+.spotify-artwork .placeholder-artwork {
+  width: 48px;
+  height: 48px;
+  background: #333;
+  border-radius: 4px;
+}
+
+/* Title & subtitle */
+.spotify-info {
+  display: flex;
+  flex-direction: column;
+}
+.spotify-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #E6A57E;
+}
+.spotify-subtitle {
+  font-size: 1rem;
+  color: #c5c5c5;
+}
+
+/* Date/range on right */
+.spotify-plays {
+  font-size: 1rem;
+  text-align: right;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* --------- Modal Styles --------- */
+
+/* Dark overlay */
+.player-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal “card” */
+.player-box {
+  background: linear-gradient(135deg, #273585 0%, #FEB47B 100%);  
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 2rem;
+  color: #bbb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #fff;
+}
+
+/* “Now Playing:” title */
+.player-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff !important;
+}
+
+/* Company link underlined */
+.player-company-link {
+  font-size: 2rem;
+  color: #E6A57E;
+  text-decoration: underline;
+  text-decoration-color: #E6A57E;
+  text-underline-offset: 4px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.player-company-link:hover {
+  color: #8a6148;
+  text-decoration-color: #8a6148;
+}
+
+/* Section headings inside modal */
+.section-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #E6A57E;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 0.25rem;
+}
+
+/* Key Achievements list */
+.lyrics-bullets {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.lyrics-bullets li {
+  line-height: 2;      /* double-spaced lines */
+  margin-bottom: 0;    /* spacing already via line-height */
+  font-size: 1.5rem;
+  color: #E0E0E0;
+  text-align: left;
+}
+
+/* Personal Growth paragraph */
+.personal-growth {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2;      /* double-spaced feel */
+  color: #ccc;
+  text-align: left;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Spotify-style play/pause */
+.spotify-play-btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: #E6A57E;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.1s;
+}
+.spotify-play-btn:hover {
+  transform: scale(1.3);
+}
+
+/* Time display */
+.time-display {
+  font-size: 0.9rem;
+  color: #ddd;
+  font-family: monospace;
+  text-align: right;
+}
+
+/* Skip buttons (prev/next) */
+.spotify-skip-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  color: #E6A57E;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spotify-skip-btn:hover {
+  color: #8a6148;
+  transform: scale(1.1);
+}
+
+/* Adjusted custom-player container */
+.custom-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Title for projects, reusing spacing */
+.projects-heading {
+  font-size: 3rem;
+  margin: 2.5rem 0 1.5rem;   /* space above & below */
+  color: #fff;
+}
+
+/* In the .spotify-plays cell for projects, style the “View” link */
+.project-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.project-link:hover {
+  color: #ffffff;
+}

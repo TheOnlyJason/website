@@ -13,7 +13,7 @@
   pointer-events: none;
   border-radius: 30%;
   background:
-    radial-gradient(circle at center, #1DB954 0%, #1DB954 15%, transparent 15%),
+    radial-gradient(circle at center, #8FD6D6 0%, #8FD6D6 15%, transparent 15%),
     radial-gradient(circle at center, rgba(255,255,255,0.2) 22%, transparent 22%),
     repeating-radial-gradient(circle at center,
       rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 1px,

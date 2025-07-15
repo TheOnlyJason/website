@@ -16,7 +16,7 @@
     top: 65%; left: 50%;
     transform: translate(-50%, -50%);
     width: 6rem; height: 6rem;
-    background-color: rgba(29,185,84,0.8);
+    background-color: #E6A57E;
     border: none; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     color: white; font-size: 2.5rem;
@@ -26,7 +26,7 @@
   }
   .home-play-button:hover {
     transform: translate(-50%, -50%) scale(1.5);
-    background-color: rgba(29,185,84,1);
+    background-color: #E6A57E;
   }
   
   /* Expanding overlay circle (behind the play icon) */
@@ -34,7 +34,7 @@
     position: absolute;
     top: 65%; left: 50%;
     width: 6rem; height: 6rem;
-    background-color: #1DB954;
+    background-color: #E6A57E;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1; /* just below the button */

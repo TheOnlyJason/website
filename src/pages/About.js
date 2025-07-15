@@ -14,7 +14,7 @@ export default function About() {
 
   const handlePlayClick = (e) => {
     e.stopPropagation(); // prevent the flip
-    navigate('/experiences');
+    navigate('/spotify');
   };
 
   return (
