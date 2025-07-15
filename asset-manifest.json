@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.04ccd3aa.css",
-    "main.js": "/website/static/js/main.1801ae5a.js",
+    "main.css": "/website/static/css/main.114fa89f.css",
+    "main.js": "/website/static/js/main.527444a6.js",
+    "static/media/SetFindr.mp3": "/website/static/media/SetFindr.31fdb9264a9eb9267293.mp3",
+    "static/media/mathnasium.mp3": "/website/static/media/mathnasium.619b6902929776fb5e56.mp3",
+    "static/media/paramount.mp3": "/website/static/media/paramount.52a79b46d649fb643602.mp3",
+    "static/media/youth.mp3": "/website/static/media/youth.96e0238b3de7f5068f41.mp3",
+    "static/media/superintro.mp3": "/website/static/media/superintro.4b3f94f48782ebcb8142.mp3",
+    "static/media/botenyu.mp3": "/website/static/media/botenyu.525e8c4f5f1bde43d0a6.mp3",
     "static/media/profile.jpg": "/website/static/media/profile.d30faff27a8073095f3c.jpg",
     "index.html": "/website/index.html",
-    "main.04ccd3aa.css.map": "/website/static/css/main.04ccd3aa.css.map",
-    "main.1801ae5a.js.map": "/website/static/js/main.1801ae5a.js.map"
+    "main.114fa89f.css.map": "/website/static/css/main.114fa89f.css.map",
+    "main.527444a6.js.map": "/website/static/js/main.527444a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.04ccd3aa.css",
-    "static/js/main.1801ae5a.js"
+    "static/css/main.114fa89f.css",
+    "static/js/main.527444a6.js"
   ]
 }
